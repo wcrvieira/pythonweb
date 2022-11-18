@@ -1,0 +1,27 @@
+<html> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <title> Registro </title> 
+        <link rel="stylesheet" href="../static/style.css">        
+    </head> 
+    <body> 
+        <div class="registercontent" align="center"> 
+            <div class="registertop"> 
+                <h1>Cadastro de usuário</h1> 
+            </div></br></br> 
+            <div class="registerbottom"> 
+              <form action="{{ url_for('register')}}" method="post" autocomplete="on"> 
+            <div class="msg">{{ msg }}</div> 
+            <input type="text" name="username" placeholder="Informe o nome de usuário" class="textbox" id="username" required></br></br> 
+            <input type="password" name="password" placeholder="Digite uma senha" class="textbox" id="password" required></br></br> 
+            <input type="email" name="email" placeholder="Informe seu e-mail" class="textbox" id="email" required></br></br> 
+            <input type="tel" name="celular" placeholder="Entre com seu celular" class="textbox" id="celular" required></br></br> 
+            <input type="text" name="city" placeholder="Informe sua cidade" class="textbox" id="city" required></br></br> 
+            <input type="text" name="state" placeholder="Informe seu estado" class="textbox" id="state" required></br></br> 
+            <input type="submit" class="btn" value="Registre"> 
+              </form> 
+              <p class="worddark">Já tem uma conta? <a class="worddark" href="{{ url_for('login')}}">Faça o login</a></p> 
+            </div> 
+        </div> 
+    </body> 
+</html> 

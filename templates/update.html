@@ -1,0 +1,37 @@
+<html lang="en"> 
+    <head> 
+        <title>update</title> 
+        <link rel="stylesheet" href="../static/style.css"> 
+    </head> 
+    <body bgcolor="#e6ffee"> 
+        <div class="one"> 
+            <div class="two"> 
+                <h1>Side Bar</h1> 
+                <ul> 
+                    <li><a href="{{url_for('index')}}">Index</a></li> 
+                    <li><a href="{{url_for('view')}}">View</a></li> 
+                    <li class="active"><a href="{{url_for('update')}}">Update</a></li> 
+                    <li><a href="{{url_for('logout')}}">Log out</a></li> 
+                </ul>  
+            </div> 
+            <div class="content" align="center"> 
+                <div class="topbar"> 
+                    <h2>Bemvindo!! Você está na página de atualizações!! </h2>                         
+                </div></br></br> 
+                <div class="contentbar"> 
+                  <h1>Preencha os campos para atualizar</h1></br> 
+              <form action="{{ url_for('update') }}" method="post" autocomplete="off"> 
+                    <div class="msg">{{ msg }}</div> 
+                    <input type="text" name="username" placeholder="Informe o nome de usuário" class="textbox" id="username" required></br></br> 
+                    <input type="password" name="password" placeholder="Digite uma senha" class="textbox" id="password" required></br></br> 
+                    <input type="email" name="email" placeholder="Informe seu e-mail" class="textbox" id="email" required></br></br> 
+                    <input type="tel" name="email" placeholder="Entre com seu celular" class="textbox" id="celular" required></br></br> 
+                    <input type="text" name="city" placeholder="Informe sua cidade" class="textbox" id="city" required></br></br> 
+                    <input type="text" name="state" placeholder="Informe seu estado" class="textbox" id="state" required></br></br> 
+                    <input type="submit" class="btn" value="Update"> 
+              </form>                      
+                </div>   
+                    </div> 
+        </div> 
+    </body> 
+</html> 

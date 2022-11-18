@@ -1,0 +1,28 @@
+<html lang="en"> 
+    <head> 
+        <title>Perfil</title> 
+        <link rel="stylesheet" href="../static/style.css"> 
+    </head> 
+  
+    <body bgcolor="#e6ffee"> 
+        <div class="one"> 
+            <div class="two"> 
+                <h1>Side Bar</h1> 
+                <ul> 
+                    <li class="active"><a href="{{url_for('index')}}">Index</a></li> 
+                    <li><a href="{{url_for('view')}}">View</a></li> 
+                    <li><a href="{{url_for('update')}}">Update</a></li> 
+                    <li><a href="{{url_for('logout')}}">Log out</a></li> 
+                </ul>  
+            </div> 
+            <div class="content" align="center"> 
+                <div class="topbar"> 
+                    <h2>Bemvindo!! Você está na página principal!! </h2>                         
+                </div></br></br> 
+                <div class="contentbar"> 
+                     <div class="msg">{{ msg }}</div> 
+                </div>   
+                    </div> 
+        </div> 
+    </body> 
+</html> 
